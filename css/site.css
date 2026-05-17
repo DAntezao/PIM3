@@ -419,6 +419,14 @@ img{display:block;max-width:100%}
   padding:48px 0;
 }
 
+.auth-grid{
+  width:100%;
+  grid-template-columns:minmax(0,420px) minmax(0,560px);
+  align-items:start;
+  justify-content:center;
+  gap:24px;
+}
+
 .form-card{
   width:min(100%,460px);
   background:#fff;
@@ -426,6 +434,27 @@ img{display:block;max-width:100%}
   border-radius:18px;
   padding:26px;
   box-shadow:var(--shadow);
+}
+
+.signup-card{
+  width:100%;
+  scroll-margin-top:96px;
+}
+
+.check-option{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.45;
+}
+
+.check-option input{
+  width:18px;
+  height:18px;
+  margin-top:1px;
+  accent-color:var(--primary);
 }
 
 .auth-switch{
@@ -733,9 +762,10 @@ img{display:block;max-width:100%}
   .nav-wrap{height:auto;min-height:72px;flex-wrap:wrap;padding:14px 20px}
   .main-nav{order:3;width:100%;justify-content:center}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .hero,.checkout-grid,.locations-grid,.rewards-grid,.two-col{grid-template-columns:1fr}
+  .hero,.checkout-grid,.locations-grid,.rewards-grid,.two-col,.auth-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .sticky-card{position:static}
+  .auth-grid .form-card{width:min(100%,560px)}
 }
 
 @media(max-width:640px){

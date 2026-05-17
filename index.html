@@ -25,6 +25,7 @@
 
       <div class="header-actions">
         <a class="icon-btn" href="#checkout" aria-label="Ver pedido">🛒</a>
+        <a class="ghost-btn" href="#cadastro">Cadastrar</a>
         <a class="primary-btn login-link" href="#login">Entrar</a>
       </div>
     </div>
@@ -255,8 +256,8 @@
       </div>
     </section>
 
-    <section id="login" class="page-section">
-      <div class="login-wrap">
+    <section id="login" class="page-section auth-section">
+      <div class="login-wrap auth-grid">
         <form class="form-card" action="#menu">
           <div class="page-head">
             <h1>Entrar</h1>
@@ -266,6 +267,27 @@
             <div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="voce@email.com"></div>
             <div class="field"><label for="password">Senha</label><input id="password" type="password" placeholder="M&iacute;nimo de 6 caracteres"></div>
             <a class="primary-btn wide" href="#menu">Entrar</a>
+          </div>
+        </form>
+
+        <form id="cadastro" class="form-card signup-card" action="#menu">
+          <div class="page-head">
+            <h1>Cadastro</h1>
+            <p>Crie sua conta para salvar dados, acompanhar pedidos e juntar pontos.</p>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="signup-name">Nome completo</label><input id="signup-name" type="text" placeholder="Seu nome" required></div>
+            <div class="field"><label for="signup-email">E-mail</label><input id="signup-email" type="email" placeholder="voce@email.com" required></div>
+            <div class="field"><label for="signup-phone">Telefone</label><input id="signup-phone" type="tel" placeholder="(11) 90000-0000" required></div>
+            <div class="two-col">
+              <div class="field"><label for="signup-password">Senha</label><input id="signup-password" type="password" placeholder="M&iacute;nimo de 6 caracteres" minlength="6" required></div>
+              <div class="field"><label for="signup-confirm">Confirmar senha</label><input id="signup-confirm" type="password" placeholder="Repita sua senha" minlength="6" required></div>
+            </div>
+            <label class="check-option">
+              <input type="checkbox">
+              <span>Quero receber ofertas e novidades da Burger Nation.</span>
+            </label>
+            <button class="primary-btn wide" type="submit">Criar Conta</button>
           </div>
         </form>
       </div>
