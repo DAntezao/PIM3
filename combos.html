@@ -1,360 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Combos | Burger Nation</title>
-
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/combos.css">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/combos.css">
 </head>
-
 <body>
-
-  <!-- HEADER -->
-
   <header>
-
     <div class="navbar">
-
-      <div class="logo">
-
-        <div class="logo-icon">
-          🍔
-        </div>
-
+      <a class="logo" href="./index.html#menu">
+        <div class="logo-icon">BN</div>
         <span>Burger Nation</span>
-
-      </div>
+      </a>
 
       <nav class="menu">
-
-        <a href="#">Cardápio</a>
-        <a href="./unidades.html">Unidades</a>
-
+        <a href="./index.html#menu">Card&aacute;pio</a>
+        <a href="./index.html#locations">Unidades</a>
+        <a href="./index.html#rewards">Pontos</a>
       </nav>
 
       <div class="header-actions">
-
-        <div class="cart">
-          🛒
-        </div>
-
+        <a href="./index.html#checkout" class="cart">Pedido</a>
         <a href="./index.html#login">
-          <button class="login-btn">
-            Entrar
-          </button>
+          <button class="login-btn">Entrar</button>
         </a>
-
       </div>
-
     </div>
-
   </header>
 
-  <!-- HERO -->
-
   <section class="combo-hero">
-
     <div class="hero-content">
-
-      <span class="hero-tag">
-        🔥 Mais vendidos
-      </span>
-
-      <h1>
-        Combos que matam sua fome de verdade
-      </h1>
-
-      <p>
-        Escolha os melhores combos da Burger Nation e aproveite descontos exclusivos.
-      </p>
-
-      <a href="#combos" class="hero-btn">
-        Ver Combos
-      </a>
-
+      <span class="hero-tag">Mais vendidos</span>
+      <h1>Combos que matam sua fome de verdade</h1>
+      <p>Escolha os melhores combos da Burger Nation e aproveite descontos exclusivos.</p>
+      <a href="#combos" class="hero-btn">Ver Combos</a>
     </div>
-
   </section>
 
-  <!-- COMBOS -->
-
   <main class="container" id="combos">
-
     <div class="section-title">
-
-      <h2>
-        Nossos Combos
-      </h2>
-
-      <p>
-        Escolha seu favorito
-      </p>
-
+      <h2>Nossos Combos</h2>
+      <p>Escolha seu favorito</p>
     </div>
 
     <section class="products">
-
-      <!-- COMBO 1 -->
-
-      <div class="card">
-
+      <article class="card">
         <div class="card-image">
-
           <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&h=360&fit=crop" alt="Combo Classic com hambúrguer, batata frita e refrigerante">
-
-          <div class="tag">
-            Mais Vendido
-          </div>
-
-          <div class="discount">
-            20% OFF
-          </div>
-
+          <div class="tag">Mais Vendido</div>
+          <div class="discount">20% OFF</div>
         </div>
-
         <div class="card-content">
-
-          <h2 class="card-title">
-            Combo Classic
-          </h2>
-
-          <p class="card-description">
-            O combo perfeito para qualquer momento.
-          </p>
-
-          <div class="includes">
-
-            <h4>Inclui:</h4>
-
-            <ul>
-              <li>✓ X-Burger Clássico</li>
-              <li>✓ Batata Média</li>
-              <li>✓ Refrigerante 500ml</li>
-            </ul>
-
-          </div>
-
-          <span class="old-price">
-            R$ 49,90
-          </span>
-
-          <div class="price-area">
-
-            <div class="price">
-              R$ 39,90
-            </div>
-
-            <button class="buy-btn">
-              Comprar
-            </button>
-
-          </div>
-
+          <h2 class="card-title">Combo Classic</h2>
+          <p class="card-description">O combo perfeito para qualquer momento.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; X-Burger Cl&aacute;ssico</li><li>&check; Batata M&eacute;dia</li><li>&check; Refrigerante 500ml</li></ul></div>
+          <span class="old-price">R$ 49,90</span>
+          <div class="price-area"><div class="price">R$ 39,90</div><button class="buy-btn">Comprar</button></div>
         </div>
+      </article>
 
-      </div>
-
-      <!-- COMBO 2 -->
-
-      <div class="card">
-
+      <article class="card">
         <div class="card-image">
-
           <img src="./assets/img/combos/combo_bacon.jpeg" alt="Combo Bacon Supreme com hambúrguer artesanal e batata frita">
-
-          <div class="discount">
-            15% OFF
-          </div>
-
+          <div class="discount">15% OFF</div>
         </div>
-
         <div class="card-content">
-
-          <h2 class="card-title">
-            Combo Bacon Supreme
-          </h2>
-
-          <p class="card-description">
-            Muito bacon, cheddar e sabor absurdo.
-          </p>
-
-          <div class="includes">
-
-            <h4>Inclui:</h4>
-
-            <ul>
-              <li>✓ Bacon Burger</li>
-              <li>✓ Batata Grande</li>
-              <li>✓ Refrigerante 500ml</li>
-            </ul>
-
-          </div>
-
-          <span class="old-price">
-            R$ 54,90
-          </span>
-
-          <div class="price-area">
-
-            <div class="price">
-              R$ 44,90
-            </div>
-
-            <button class="buy-btn">
-              Comprar
-            </button>
-
-          </div>
-
+          <h2 class="card-title">Combo Bacon Supreme</h2>
+          <p class="card-description">Muito bacon, cheddar e sabor absurdo.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; Bacon Burger</li><li>&check; Batata Grande</li><li>&check; Refrigerante 500ml</li></ul></div>
+          <span class="old-price">R$ 54,90</span>
+          <div class="price-area"><div class="price">R$ 44,90</div><button class="buy-btn">Comprar</button></div>
         </div>
+      </article>
 
-      </div>
-
-      <!-- COMBO 3 -->
-
-      <div class="card">
-
+      <article class="card">
         <div class="card-image">
-
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&h=360&fit=crop" alt="Combo Família com hambúrgueres para compartilhar">
-
-          <div class="tag">
-            Família
-          </div>
-
+          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&h=360&fit=crop" alt="Combo Duplo com dois hambúrgueres">
+          <div class="tag">Para dividir</div>
+          <div class="discount">20% OFF</div>
         </div>
-
         <div class="card-content">
-
-          <h2 class="card-title">
-            Combo Família
-          </h2>
-
-          <p class="card-description">
-            Ideal para dividir com todo mundo.
-          </p>
-
-          <div class="includes">
-
-            <h4>Inclui:</h4>
-
-            <ul>
-              <li>✓ 4 Hambúrgueres</li>
-              <li>✓ Batata Família</li>
-              <li>✓ Refrigerante 2L</li>
-            </ul>
-
-          </div>
-
-          <span class="old-price">
-            R$ 119,90
-          </span>
-
-          <div class="price-area">
-
-            <div class="price">
-              R$ 99,90
-            </div>
-
-            <button class="buy-btn">
-              Comprar
-            </button>
-
-          </div>
-
+          <h2 class="card-title">Combo Duplo</h2>
+          <p class="card-description">Dois hamb&uacute;rgueres para compartilhar.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; 2x X-Burger Cl&aacute;ssico</li><li>&check; Batata Grande</li><li>&check; 2x Refrigerante 500ml</li></ul></div>
+          <span class="old-price">R$ 74,70</span>
+          <div class="price-area"><div class="price">R$ 59,90</div><button class="buy-btn">Comprar</button></div>
         </div>
+      </article>
 
-      </div>
-
-      <!-- COMBO 4 -->
-
-      <div class="card">
-
+      <article class="card">
         <div class="card-image">
-
-          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&h=360&fit=crop" alt="Combo Monster com hambúrguer grande, acompanhamento e bebida">
-
-          <div class="discount">
-            12% OFF
-          </div>
-
+          <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?w=500&h=360&fit=crop" alt="Combo Kids">
+          <div class="tag">Kids</div>
         </div>
-
         <div class="card-content">
-
-          <h2 class="card-title">
-            Combo Monster
-          </h2>
-
-          <p class="card-description">
-            Muito recheio e muita fome.
-          </p>
-
-          <div class="includes">
-
-            <h4>Inclui:</h4>
-
-            <ul>
-              <li>✓ Monster Burger</li>
-              <li>✓ Onion Rings</li>
-              <li>✓ Refrigerante 700ml</li>
-            </ul>
-
-          </div>
-
-          <span class="old-price">
-            R$ 64,90
-          </span>
-
-          <div class="price-area">
-
-            <div class="price">
-              R$ 54,90
-            </div>
-
-            <button class="buy-btn">
-              Comprar
-            </button>
-
-          </div>
-
+          <h2 class="card-title">Combo Kids</h2>
+          <p class="card-description">Uma op&ccedil;&atilde;o menor, saborosa e divertida.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; Mini Burger</li><li>&check; Batata Pequena</li><li>&check; Suco Natural</li></ul></div>
+          <span class="old-price">R$ 37,70</span>
+          <div class="price-area"><div class="price">R$ 29,90</div><button class="buy-btn">Comprar</button></div>
         </div>
+      </article>
 
-      </div>
+      <article class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?w=500&h=360&fit=crop" alt="Combo Chicken">
+          <div class="discount">15% OFF</div>
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Combo Chicken</h2>
+          <p class="card-description">Para quem prefere frango crocante.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; Chicken Burger</li><li>&check; Nuggets</li><li>&check; Refrigerante 500ml</li></ul></div>
+          <span class="old-price">R$ 53,70</span>
+          <div class="price-area"><div class="price">R$ 42,90</div><button class="buy-btn">Comprar</button></div>
+        </div>
+      </article>
 
+      <article class="card">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&h=360&fit=crop" alt="Combo Premium">
+          <div class="tag">Premium</div>
+          <div class="discount">22% OFF</div>
+        </div>
+        <div class="card-content">
+          <h2 class="card-title">Combo Premium</h2>
+          <p class="card-description">A melhor experi&ecirc;ncia Burger Nation.</p>
+          <div class="includes"><h4>Inclui:</h4><ul><li>&check; Double Smash Burger</li><li>&check; Batata Grande</li><li>&check; Milkshake</li></ul></div>
+          <span class="old-price">R$ 89,60</span>
+          <div class="price-area"><div class="price">R$ 69,90</div><button class="buy-btn">Comprar</button></div>
+        </div>
+      </article>
     </section>
-
   </main>
 
-  <!-- FOOTER -->
-
   <footer>
-
     <div class="footer-content">
-
-      <h2>
-        Burger Nation
-      </h2>
-
-      <p>
-        © 2026 Burger Nation - Todos os direitos reservados.
-      </p>
-
+      <h2>Burger Nation</h2>
+      <p>&copy; 2026 Burger Nation - Todos os direitos reservados.</p>
     </div>
-
   </footer>
-
 </body>
-
 </html>
