@@ -13,60 +13,313 @@
   <header class="site-header">
     <div class="nav-wrap">
       <a class="brand" href="#menu" aria-label="Burger Nation">
-        <span class="brand-icon">🍔</span>
+        <span class="brand-icon">BN</span>
         <span>Burger Nation</span>
       </a>
 
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a href="#menu" data-route="menu">Cardápio</a>
-        <a href="#locations" data-route="locations">Unidades</a>
-        <a href="#rewards" data-route="rewards" class="rewards-link hidden">Pontos</a>
+      <nav class="main-nav" aria-label="Navega&ccedil;&atilde;o principal">
+        <a href="#menu">Card&aacute;pio</a>
+        <a href="#locations">Unidades</a>
+        <a href="#rewards">Pontos</a>
       </nav>
 
       <div class="header-actions">
-        <button class="icon-btn cart-toggle" type="button" aria-label="Abrir carrinho">
-          🛒
-          <span class="cart-count hidden">0</span>
-        </button>
-        <a class="points-pill hidden" href="#rewards"><span>🏆</span><strong data-points>350</strong> pts</a>
-        <span class="user-pill hidden">👤 <span data-user-name></span></span>
-        <button class="ghost-btn logout-btn hidden" type="button">Sair</button>
-        <a class="primary-btn login-link" href="#login">👤 Entrar</a>
+        <a class="icon-btn" href="#checkout" aria-label="Ver pedido">🛒</a>
+        <a class="primary-btn login-link" href="#login">Entrar</a>
       </div>
     </div>
   </header>
 
-  <main id="app"></main>
-
-  <aside class="cart-panel" aria-label="Carrinho" aria-hidden="true">
-    <div class="cart-backdrop cart-close"></div>
-    <section class="cart-sheet">
-      <div class="cart-head">
-        <div>
-          <h2>Seu Carrinho</h2>
-          <p class="muted cart-description">Adicione itens do cardápio ao seu carrinho.</p>
-        </div>
-        <button class="icon-btn cart-close" type="button" aria-label="Fechar carrinho">×</button>
+  <main id="app">
+    <section class="hero">
+      <div>
+        <span class="badge hot">Pedido online</span>
+        <h1>Fast food artesanal com entrega r&aacute;pida</h1>
+        <p>Escolha seus produtos favoritos, confira combos especiais e finalize seu pedido de forma simples.</p>
+        <a class="primary-btn" href="#menu">Ver Card&aacute;pio</a>
       </div>
-      <div class="cart-items"></div>
-      <div class="cart-footer hidden">
-        <div class="divider"></div>
-        <div class="total-row">
-          <span>Total</span>
-          <strong class="cart-total">R$ 0,00</strong>
-        </div>
-        <a class="primary-btn wide cart-close" href="#checkout">Finalizar Pedido</a>
+      <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=900&h=650&fit=crop" alt="Hamb&uacute;rguer artesanal">
+    </section>
+
+    <section id="menu" class="page-section">
+      <div class="page-head">
+        <h1>Nosso Card&aacute;pio</h1>
+        <p>Produtos selecionados para uma experi&ecirc;ncia completa.</p>
+      </div>
+
+      <nav class="tabs static-tabs" aria-label="Categorias do card&aacute;pio">
+        <a class="tab-btn active" href="#menu">Todos</a>
+        <a class="tab-btn" href="#combos">Combos</a>
+        <a class="tab-btn" href="#burgers">Burgers</a>
+        <a class="tab-btn" href="#sides">Acompanhamentos</a>
+        <a class="tab-btn" href="#drinks">Bebidas</a>
+        <a class="tab-btn" href="#desserts">Sobremesas</a>
+      </nav>
+    </section>
+
+    <section id="combos" class="page-section">
+      <div class="section-title">
+        <h2>Combos</h2>
+        <p>Op&ccedil;&otilde;es completas com pre&ccedil;o especial.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=500&h=360&fit=crop" alt="Combo Classic">
+            <span class="badge primary top-left">Mais Vendido</span>
+            <span class="badge hot top-right">20% OFF</span>
+          </div>
+          <div class="card-body">
+            <h3>Combo Classic</h3>
+            <p>A escolha perfeita para matar a fome.</p>
+            <div class="includes">
+              <strong>Inclui:</strong>
+              <span>&check; X-Burger Cl&aacute;ssico</span>
+              <span>&check; Batata Frita M&eacute;dia</span>
+              <span>&check; Refrigerante 500ml</span>
+            </div>
+            <div class="price-line"><span class="old-price">R$ 49,70</span><span class="price">R$ 39,90</span></div>
+          </div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="./assets/img/combos/combo_bacon.jpeg" alt="Combo Bacon Supreme">
+            <span class="badge hot top-right">15% OFF</span>
+          </div>
+          <div class="card-body">
+            <h3>Combo Bacon Supreme</h3>
+            <p>Para os amantes de bacon, cheddar e sabor intenso.</p>
+            <div class="includes">
+              <strong>Inclui:</strong>
+              <span>&check; Bacon Burger</span>
+              <span>&check; Batata Frita Grande</span>
+              <span>&check; Refrigerante 500ml</span>
+            </div>
+            <div class="price-line"><span class="old-price">R$ 55,70</span><span class="price">R$ 44,90</span></div>
+          </div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=500&h=360&fit=crop" alt="Combo Duplo">
+            <span class="badge primary top-left">Para dividir</span>
+            <span class="badge hot top-right">20% OFF</span>
+          </div>
+          <div class="card-body">
+            <h3>Combo Duplo</h3>
+            <p>Dois hamb&uacute;rgueres para compartilhar.</p>
+            <div class="includes">
+              <strong>Inclui:</strong>
+              <span>&check; 2x X-Burger Cl&aacute;ssico</span>
+              <span>&check; Batata Frita Grande</span>
+              <span>&check; 2x Refrigerante 500ml</span>
+            </div>
+            <div class="price-line"><span class="old-price">R$ 74,70</span><span class="price">R$ 59,90</span></div>
+          </div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
       </div>
     </section>
-  </aside>
 
-  <div class="toast" role="status" aria-live="polite"></div>
+    <section id="burgers" class="page-section">
+      <div class="section-title">
+        <h2>Hamb&uacute;rgueres</h2>
+        <p>Receitas artesanais feitas para pedir de novo.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=360&fit=crop" alt="X-Burger Cl&aacute;ssico"></div>
+          <div class="card-body"><span class="badge">Hamb&uacute;rgueres</span><h3>X-Burger Cl&aacute;ssico</h3><p>Hamb&uacute;rguer artesanal, queijo, alface, tomate e molho especial.</p><span class="price">R$ 25,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&h=360&fit=crop" alt="Bacon Burger"></div>
+          <div class="card-body"><span class="badge">Hamb&uacute;rgueres</span><h3>Bacon Burger</h3><p>Hamb&uacute;rguer, bacon crocante, cheddar e cebola caramelizada.</p><span class="price">R$ 29,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=500&h=360&fit=crop" alt="Double Smash Burger"><span class="badge hot top-right">Novo</span></div>
+          <div class="card-body"><span class="badge">Hamb&uacute;rgueres</span><h3>Double Smash Burger</h3><p>Dois hamb&uacute;rgueres smash, queijo americano, picles e molho especial.</p><span class="price">R$ 35,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="sides" class="page-section">
+      <div class="section-title">
+        <h2>Acompanhamentos</h2>
+        <p>Crocantes, porcionados e prontos para acompanhar seu pedido.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="./assets/img/combos/batata_rustica2.jpg" alt="Batata R&uacute;stica"><span class="badge hot top-right">Novo</span></div>
+          <div class="card-body"><span class="badge">Acompanhamentos</span><h3>Batata R&uacute;stica</h3><p>Batatas r&uacute;sticas com casca, temperadas com ervas.</p><span class="price">R$ 17,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="./assets/img/combos/batata_cheddar.jpg" alt="Batata Cheddar e Bacon"></div>
+          <div class="card-body"><span class="badge">Acompanhamentos</span><h3>Batata Cheddar e Bacon</h3><p>Batatas fritas cobertas com queijo cheddar e bacon.</p><span class="price">R$ 24,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1639024471283-03518883512d?w=500&h=360&fit=crop" alt="Onion Rings"></div>
+          <div class="card-body"><span class="badge">Acompanhamentos</span><h3>Onion Rings</h3><p>An&eacute;is de cebola empanados e crocantes.</p><span class="price">R$ 18,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="drinks" class="page-section">
+      <div class="section-title">
+        <h2>Bebidas</h2>
+        <p>Escolha a bebida ideal para completar o pedido.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&h=360&fit=crop" alt="Refrigerante 500ml"></div>
+          <div class="card-body"><span class="badge">Bebidas</span><h3>Refrigerante 500ml</h3><p>Coca-Cola, Guaran&aacute; ou Sprite.</p><span class="price">R$ 7,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=500&h=360&fit=crop" alt="Milkshake"></div>
+          <div class="card-body"><span class="badge">Bebidas</span><h3>Milkshake</h3><p>Chocolate, morango ou baunilha.</p><span class="price">R$ 16,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=500&h=360&fit=crop" alt="Suco Natural"></div>
+          <div class="card-body"><span class="badge">Bebidas</span><h3>Suco Natural</h3><p>Laranja, lim&atilde;o ou morango.</p><span class="price">R$ 12,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="desserts" class="page-section">
+      <div class="section-title">
+        <h2>Sobremesas</h2>
+        <p>Um final doce para fechar o pedido.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1535920527002-b35e96722eb9?w=500&h=360&fit=crop" alt="Torta de Ma&ccedil;&atilde;"></div>
+          <div class="card-body"><span class="badge">Sobremesas</span><h3>Torta de Ma&ccedil;&atilde;</h3><p>Torta crocante de ma&ccedil;&atilde; com canela.</p><span class="price">R$ 12,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&h=360&fit=crop" alt="Brownie com Sorvete"><span class="badge hot top-right">Novo</span></div>
+          <div class="card-body"><span class="badge">Sobremesas</span><h3>Brownie com Sorvete</h3><p>Brownie de chocolate quente com sorvete de baunilha.</p><span class="price">R$ 18,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+        <article class="card">
+          <div class="card-media"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500&h=360&fit=crop" alt="Casquinha de Sorvete"></div>
+          <div class="card-body"><span class="badge">Sobremesas</span><h3>Casquinha de Sorvete</h3><p>Sorvete de chocolate, baunilha ou morango.</p><span class="price">R$ 8,90</span></div>
+          <div class="card-actions"><a class="primary-btn wide" href="#checkout">Adicionar</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="locations" class="page-section">
+      <div class="page-head">
+        <h1>Nossas Unidades</h1>
+        <p>Encontre a loja mais pr&oacute;xima para retirar seu pedido.</p>
+      </div>
+      <div class="locations-grid">
+        <article class="info-card"><span class="badge green">Aberto agora</span><h3>Burger Nation Shopping Center</h3><p>Av. Paulista, 1000 - Bela Vista, S&atilde;o Paulo - SP</p><p>Seg-S&aacute;b: 10h &agrave;s 22h | Dom: 12h &agrave;s 20h</p><p>(11) 3000-1234</p></article>
+        <article class="info-card"><span class="badge green">Aberto agora</span><h3>Burger Nation Jardins</h3><p>Rua Augusta, 2500 - Jardins, S&atilde;o Paulo - SP</p><p>Seg-Dom: 11h &agrave;s 23h</p><p>(11) 3000-5678</p></article>
+        <article class="info-card"><span class="badge red">Fechado</span><h3>Burger Nation Vila Mariana</h3><p>Av. Domingos de Morais, 1500 - Vila Mariana, S&atilde;o Paulo - SP</p><p>Seg-Dom: 11h &agrave;s 22h</p><p>(11) 3000-9012</p></article>
+        <article class="info-card"><span class="badge green">Aberto agora</span><h3>Burger Nation Pinheiros</h3><p>Rua Teodoro Sampaio, 800 - Pinheiros, S&atilde;o Paulo - SP</p><p>Seg-Sex: 10h &agrave;s 23h | S&aacute;b-Dom: 11h &agrave;s 00h</p><p>(11) 3000-3456</p></article>
+      </div>
+    </section>
+
+    <section id="rewards" class="page-section">
+      <div class="page-head">
+        <h1>Programa de Pontos</h1>
+        <p>Acumule pontos e troque por recompensas.</p>
+      </div>
+      <div class="two-col">
+        <section class="info-card">
+          <h2>Seus Pontos</h2>
+          <div class="price">350 pontos</div>
+          <div class="summary-row"><span class="muted">Pr&oacute;xima recompensa</span><span>500 pontos</span></div>
+          <div class="progress"><span style="width:70%"></span></div>
+          <p>Faltam 150 pontos.</p>
+        </section>
+        <section class="info-card">
+          <h2>Como ganhar pontos</h2>
+          <p>Ganhe 10 pontos a cada R$ 10 em compras.</p>
+          <p>B&ocirc;nus de 100 pontos no seu anivers&aacute;rio.</p>
+          <p>Indique amigos e ganhe 50 pontos.</p>
+        </section>
+      </div>
+    </section>
+
+    <section id="login" class="page-section">
+      <div class="login-wrap">
+        <form class="form-card" action="#menu">
+          <div class="page-head">
+            <h1>Entrar</h1>
+            <p>Acesse sua conta para acompanhar pontos e recompensas.</p>
+          </div>
+          <div class="form-grid">
+            <div class="field"><label for="email">E-mail</label><input id="email" type="email" placeholder="voce@email.com"></div>
+            <div class="field"><label for="password">Senha</label><input id="password" type="password" placeholder="M&iacute;nimo de 6 caracteres"></div>
+            <a class="primary-btn wide" href="#menu">Entrar</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="checkout" class="page-section">
+      <div class="page-head">
+        <h1>Finalizar Pedido</h1>
+        <p>Preencha seus dados e confirme o pedido no atendimento.</p>
+      </div>
+      <form class="checkout-grid" action="#menu">
+        <div class="section-stack">
+          <section class="info-card">
+            <h2>Endere&ccedil;o de Entrega</h2>
+            <div class="form-grid">
+              <div class="field"><label for="cep">CEP *</label><input id="cep" placeholder="00000-000"></div>
+              <div class="field"><label for="address">Endere&ccedil;o *</label><input id="address" placeholder="Rua, Avenida..."></div>
+              <div class="two-col">
+                <div class="field"><label for="number">N&uacute;mero *</label><input id="number" placeholder="123"></div>
+                <div class="field"><label for="complement">Complemento</label><input id="complement" placeholder="Apto, Bloco..."></div>
+              </div>
+              <p class="hours">Tempo estimado de entrega: 30-40 minutos</p>
+            </div>
+          </section>
+          <section class="info-card">
+            <h2>Forma de Pagamento</h2>
+            <div class="payment-list">
+              <label class="payment-option"><input type="radio" name="payment" checked> Cart&atilde;o de Cr&eacute;dito</label>
+              <label class="payment-option"><input type="radio" name="payment"> Cart&atilde;o de D&eacute;bito</label>
+              <label class="payment-option"><input type="radio" name="payment"> PIX</label>
+              <label class="payment-option"><input type="radio" name="payment"> Dinheiro</label>
+            </div>
+          </section>
+        </div>
+        <aside class="info-card sticky-card">
+          <h2>Resumo do Pedido</h2>
+          <div class="summary-row"><span>1x Combo Classic</span><span>R$ 39,90</span></div>
+          <div class="summary-row"><span>1x Batata R&uacute;stica</span><span>R$ 17,90</span></div>
+          <div class="divider"></div>
+          <div class="summary-row"><span>Subtotal</span><span>R$ 57,80</span></div>
+          <div class="summary-row"><span>Taxa de entrega</span><span>R$ 8,90</span></div>
+          <div class="divider"></div>
+          <div class="summary-row total"><span>Total</span><span>R$ 66,70</span></div>
+          <a class="primary-btn wide" href="#menu">Confirmar Pedido</a>
+        </aside>
+      </form>
+    </section>
+  </main>
 
   <footer class="site-footer">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand"><span class="brand-icon">🍔</span><h3>Burger Nation</h3></div>
-        <p>Os melhores hambúrgueres artesanais da cidade. Sabor e qualidade em cada mordida.</p>
+        <div class="footer-brand"><span class="brand-icon">BN</span><h3>Burger Nation</h3></div>
+        <p>Os melhores hamb&uacute;rgueres artesanais da cidade. Sabor e qualidade em cada mordida.</p>
         <div class="socials">
           <a href="https://instagram.com" target="_blank" rel="noopener">IG</a>
           <a href="https://facebook.com" target="_blank" rel="noopener">FB</a>
@@ -74,36 +327,34 @@
         </div>
       </div>
       <div>
-        <h4>Links Rápidos</h4>
-        <a href="#menu">Cardápio</a>
+        <h4>Links R&aacute;pidos</h4>
+        <a href="#menu">Card&aacute;pio</a>
         <a href="#locations">Nossas Unidades</a>
         <a href="#rewards">Programa de Pontos</a>
-        <a href="#menu">Trabalhe Conosco</a>
+        <a href="#checkout">Finalizar Pedido</a>
       </div>
       <div>
         <h4>Atendimento</h4>
         <a href="#menu">Central de Ajuda</a>
-        <a href="#menu">Política de Privacidade</a>
+        <a href="#menu">Pol&iacute;tica de Privacidade</a>
         <a href="#menu">Termos de Uso</a>
-        <a href="#menu">Política de Entrega</a>
+        <a href="#menu">Pol&iacute;tica de Entrega</a>
       </div>
       <div>
         <h4>Contato</h4>
-        <p>📍 Av. Paulista, 1000<br>São Paulo - SP</p>
-        <p>📞 (11) 3000-1234</p>
-        <p>✉️ contato@burgernation.com.br</p>
+        <p>Av. Paulista, 1000<br>S&atilde;o Paulo - SP</p>
+        <p>(11) 3000-1234</p>
+        <p>contato@burgernation.com.br</p>
         <div class="hours">
-          <strong>Horário de Funcionamento</strong>
-          <span>Seg-Dom: 11h às 23h</span>
+          <strong>Hor&aacute;rio de Funcionamento</strong>
+          <span>Seg-Dom: 11h &agrave;s 23h</span>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2026 Burger Nation. Todos os direitos reservados.</span>
-      <span>Política de Cookies · LGPD</span>
+      <span>&copy; 2026 Burger Nation. Todos os direitos reservados.</span>
+      <span>Pol&iacute;tica de Cookies &middot; LGPD</span>
     </div>
   </footer>
-
-  <script src="./js/app.js"></script>
 </body>
 </html>

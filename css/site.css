@@ -176,6 +176,25 @@ img{display:block;max-width:100%}
   margin-bottom:28px;
 }
 
+.page-section{
+  scroll-margin-top:96px;
+  margin-bottom:54px;
+}
+
+.section-title{
+  margin-bottom:22px;
+}
+
+.section-title h2{
+  margin:0 0 8px;
+  font-size:clamp(28px,4vw,38px);
+}
+
+.section-title p{
+  margin:0;
+  color:var(--muted);
+}
+
 .page-head h1{
   margin:0 0 8px;
   font-size:clamp(32px,5vw,48px);
@@ -205,6 +224,7 @@ img{display:block;max-width:100%}
   background:transparent;
   color:var(--muted);
   font-weight:600;
+  text-align:center;
 }
 
 .tab-btn.active,.tab-btn:hover{
@@ -460,6 +480,17 @@ img{display:block;max-width:100%}
 .field input:focus{
   outline:2px solid rgba(255,45,85,.18);
   border-color:var(--primary);
+}
+
+.field select,
+.field textarea{
+  width:100%;
+  min-height:44px;
+  padding:10px 12px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  background:#fff;
+  resize:vertical;
 }
 
 .auth-note{
