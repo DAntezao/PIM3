@@ -581,6 +581,15 @@ img{display:block;max-width:100%}
 .summary-row{margin:9px 0}
 .summary-row.total{font-size:20px;font-weight:700}
 
+.empty-order{
+  padding:14px;
+  border-radius:12px;
+  background:var(--soft);
+  color:var(--muted);
+  font-size:14px;
+  text-align:center;
+}
+
 .cart-panel{
   position:fixed;
   inset:0;
