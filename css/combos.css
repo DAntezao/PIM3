@@ -1,0 +1,108 @@
+/* HERO */
+
+.combo-hero{
+  width:100%;
+  padding:80px 30px;
+  background:linear-gradient(
+    135deg,
+    #07051f,
+    #15123b
+  );
+  color:white;
+}
+
+.hero-content{
+  max-width:1400px;
+  margin:auto;
+}
+
+.hero-tag{
+  background:#ff2d55;
+  padding:10px 18px;
+  border-radius:12px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.hero-content h1{
+  font-size:58px;
+  margin-top:30px;
+  margin-bottom:20px;
+  line-height:1.1;
+  max-width:700px;
+}
+
+.hero-content p{
+  font-size:19px;
+  color:#d1d1d1;
+  max-width:650px;
+  line-height:1.6;
+}
+
+.hero-btn{
+  margin-top:30px;
+  border:none;
+  background:#ff2d55;
+  color:white;
+  padding:18px 34px;
+  border-radius:18px;
+  font-size:17px;
+  font-weight:600;
+  cursor:pointer;
+  transition:.3s;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  box-shadow:0 10px 25px rgba(255,45,85,0.35);
+}
+
+.hero-btn:hover{
+  transform:translateY(-4px);
+  background:#ff1744;
+}
+
+/* CATEGORIES BAR */
+
+.categories-bar{
+  width:100%;
+  background:white;
+  border-bottom:1px solid #ececec;
+  position:sticky;
+  top:90px;
+  z-index:999;
+}
+
+.categories-container{
+  max-width:1400px;
+  margin:auto;
+  padding:14px 30px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  overflow-x:auto;
+}
+
+/* CATEGORY */
+
+.category{
+  text-decoration:none;
+  color:#555;
+  background:#f5f5f7;
+  padding:14px 24px;
+  border-radius:14px;
+  font-size:15px;
+  font-weight:600;
+  transition:.3s;
+  white-space:nowrap;
+}
+
+.category:hover{
+  background:#ececf1;
+  color:#111;
+}
+
+.category.active{
+  background:#ff2d55;
+  color:white;
+  box-shadow:0 8px 20px rgba(255,45,85,0.25);
+}
